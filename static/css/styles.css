@@ -1,0 +1,59 @@
+/* static/css/style.css */
+body {
+    background-color: #1e2755; /* Dark blue background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2a378e; /* Dark blue container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+h1 {
+    text-align: center;
+}
+.upload-form {
+    text-align: center;
+    margin-top: 20px;
+}
+.upload-btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue upload button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.upload-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.upload-btn input[type="file"] {
+    display: none; /* Hide the file input */
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.chart {
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart img {
+    max-width: 100%;
+    height: auto;
+}

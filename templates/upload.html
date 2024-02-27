@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure AI Sentiment Analysis Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload</h1>
+        <form class="upload-form" action="/" method="post" enctype="multipart/form-data">
+            <!--<label for="file-upload" class="upload-btn">Upload CSV File</label>-->
+            <input id="file-upload" type="file" name="file">
+            <input type="submit" class="upload-btn" value="Submit">
+        </form>
+        <p id="message">{{ message }}</p>
+    </div>
+</body>
+</html>

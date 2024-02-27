@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Results</h1> 
+    <div class="chart-container">
+        <div class="chart">
+            <h2>Sentiment Distribution Chart</h2>
+            <img src="..\static\{{ chart_sentiment_distributions}}" alt="Sentiment Distribution Chart">
+        </div>
+        <div class="chart">
+            <h2>Sentiment Trends Over Time</h2>
+            <img src="..\static\{{ chart_sentiment_trends}}" alt="Sentiment Trends Over Time">
+        </div>
+        <!--
+        <div class="chart">
+            <h2>Sentiment by Category Chart</h2>
+            <img src="..\static\{{ chart_sentiment_by_category}}" alt="Sentiment by Category">
+        </div>
+        -->
+        <div class="chart">
+            <h2>Wordcloud for Negative Reviews</h2>
+            <img src="..\static\{{ chart_wordcloud_negative}}" alt="Wordcloud for Negative reviews">
+        </div>
+        <div class="chart">
+            <h2>Wordcloud for Positive Reviews</h2>
+            <img src="..\static\{{ chart_wordcloud_positive}}" alt="Wordcloud for Positive reviews">
+        </div>
+        <div class="chart">
+            <h2>Sentiment Score Distribution</h2>
+            <img src="..\static\{{ chart_sentiment_scores}}" alt="Sentiment Score Distribution">
+        </div>
+        <div class="chart">
+            <h2>Sentiment Heatmap</h2>
+            <img src="..\static\{{ chart_sentiment_heatmap}}" alt="Sentiment Heatmap">
+        </div>
+    </div>
+</body>
+</html>
